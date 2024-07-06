@@ -14,6 +14,7 @@ export function addAddress(params) {
 
 
 //可恶啊
+//可恶啥的，可以协作就不错了
 // 默认地址信息更新
 export function defaultAddressInfoUpdate(params) {
     return request({
