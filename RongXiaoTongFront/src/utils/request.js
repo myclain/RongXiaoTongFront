@@ -5,7 +5,7 @@ export function request(config) {
     const instance = axios.create({
         // baseURL: 'http://3958b99l28.zicp.vip',
         // baseURL: 'http://119.3.180.117:9090',
-        baseURL: process.env.VUE_APP_Address,
+        baseURL: 'http://123.56.162.53:8080',
         timeout: 100000
     })
     // axios.interceptors  全局拦截

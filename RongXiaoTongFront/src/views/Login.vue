@@ -70,12 +70,10 @@ export default {
 
       this.$refs[formName].validate((valid) => {
         if (valid) {
-
-          userLogin({
+            userLogin({
             username: this.ruleForm.username,
             password: this.ruleForm.password,
-          }).then((res) => {
-
+          }).then((res) => {//这里就是说登录成功,然后会返回一个res.data里面就是一个token返回值
             if (res.flag == true) {
               // 在Vuex中存储token
               this.$store.commit("setToken", res.data);

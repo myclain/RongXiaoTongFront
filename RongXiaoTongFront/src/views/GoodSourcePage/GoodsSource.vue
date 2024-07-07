@@ -73,6 +73,20 @@
 
 <script>
 import {addOrderToCart} from "../../api/cart";
+import {test} from "@/api/address";
+import axios from "axios";
+axios.get('http://123.56.162.53:8080/test')
+    .then(response => {
+        console.log(response);
+        if (response) {
+            // 处理响应数据
+        } else {
+            console.error('Invalid response data:', response.data);
+        }
+    })
+    .catch(error => {
+        console.error('Request error:', error);
+    });
 
 export default {
   data() {
